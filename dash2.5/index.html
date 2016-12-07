@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(https://cdn.pixabay.com/photo/2015/06/28/14/11/soap-bubble-824564_640.jpg);
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+
+    img {
+      margin: 0 auto;
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 120px;
+          }
+       
+    ul {
+      padding: 10px;
+      color: #f08;
+      background: rgba(105,0,155,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin:0 auto;
+    }
+    @media (max-width: 500px) {
+      h1{
+        font-size: 36px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+      
+      body{
+        background: red;
+      }
+    }
+
+    p{color: blue;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="soap-bubble-824550_640.jpg">
+    <h1>Copper's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Cheap laugh</a></li>
+      <li><a href="#">Bad joke</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Why did the chicken cross the road?</h2>
+    <p>To get to the other side.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>How did the lobster anger the tuna?</h2>
+    <p>By being so shell fish.</p>
+    <button>Like</button>
+  </article>
+  <article>  
+   <h2>My wife still misses me some times</h2>
+   <p>But her aim is getting better.</p>
+   <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() { 
+    alert("clicked!") 
+  });
+  </script>
+</body>
