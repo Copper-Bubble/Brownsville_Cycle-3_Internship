@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.first{
+  background-image: url("hat-591973_640.jpg");
+}
+.second{
+  background-image: url("man-742766_640.jpg");
+}
+.dessert{
+  background-image: url("musician-664432_640.jpg");
+}
+.price {
+  float: right;
+}
+small{
+  opacity:0;
+}
+.show-description p{
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+
+@media (max-width: 500px){
+ h1{
+   font-size: 50px;
+   margin-top: 20px;
+   line-height: 40px;
+ }
+ h2{
+   font-size: 20px;
+   margin:20px 0 30px 0;
+ }
+ div{
+   margin: 20px 12px 0 12px;
+   background-size: 100%
+  
+ }
+  p{
+   font-size: 20px;
+   line-height: 24px;
+  }
+  small{
+    font-size:16px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>RyanMcGuire</h1>
+<h2>Tought me style</h2>
+<div class="first ">
+  <p>part1 <span class="price show-description">$14</span><br />
+  <small>At first I thought I had it together. A somewhat modest flair but nothing I was really proud of so I thought "I needed a change, I needed some taste, ...I needed style". Maybe then I'll look as good as I think I can, as good as I really I am. With heart in hand and an open woredrobe, I began my quest for style. </small></p>
+</div>
+
+<div class="second ">
+  <p>part2 <span class="price">$22</span><br />
+  <small>Some taste was a bad taste. I looked around and mistakenly acted out what I thought others called style. When I wasn't called a poser I was trying to hard, they'd say things like "Omg he thinks that looks good on him" or "Why is he even doing that, he really is a know nothing with no style". I just couldn't get with it. No matter what I did or wore there was allways this "fakeness" to it. I thought I was in but now I want out.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Part3 <span class="price">$8</span><br />
+  <small>That's when I saw him. With only a few pics I knew this guy had what I was lookin for but the more I saw the more I came to realise that he did it himself. I was trying to be more like him but it turns ou he's more like the old me. It's just he was proud and I wasn't. That's when I learned that I had style this whole time I just needed to realise it. That's how RyanMcGuire tought me style. </small></p>
+</div>
+
+<script>
+$('div').on('click', function() { 
+  $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
